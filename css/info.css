@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Circular';
+    src: url('../fonts/CircularStd-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Circular';
+    font-weight: 700;
+    src: url('../fonts/CircularStd-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Circular';
+    font-weight: 800;
+    src: url('../fonts/CircularStd-Book.otf');
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+*{
+padding: 0; margin: 0;
+font-family: 'Raleway';
+}
+.header{
+    width: 100%;
+    background: linear-gradient(to bottom, #e0eafc, white);
+    margin-bottom: 30px;
+    min-height: 300px;
+}
+.numberSubmitted{
+    border: 1px solid black;
+    width: 90px;
+    height: 90px;
+    margin-left: calc(50% - 125px);
+    margin-top: 20px;
+    float: left;
+}
+.numberSubmitted h2{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 30px;
+}
+.numberSubmitted h6{
+    font-size: 8px;
+    text-align: center;
+}
+.timeLeft{
+    border: 1px solid black;
+    width: 150px;
+    height: 90px;
+    margin-right: calc(50% - 125px);
+    margin-top: 20px;
+    float: right;
+}
+.timeLeft h2{
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 100;
+    font-size: 24px;
+}
+.timeLeft h6{
+    font-size: 8px;
+    text-align: center;
+}
+.header h1{
+    text-align: center;
+    padding-top: 50px;
+}
+.header ul{
+    list-style-type: none;
+    list-style-position: inside;
+    margin-left: calc(50% - 210px);
+    margin-top: 150px; 
+}
+.header li{
+    float: left;
+    margin-left: 0px;
+    width: 100px;
+    font-size: 10px;
+    text-align: center;
+    border-left: 1px solid black;
+}
+#noborder{
+    border-left: none;
+}
+.content{
+    width: 80%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+.content h3{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px;
+}
+.ext{
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

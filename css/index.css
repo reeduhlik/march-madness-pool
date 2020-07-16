@@ -1,0 +1,652 @@
+@font-face {
+    font-family: 'Circular';
+    src: url('../fonts/CircularStd-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Circular';
+    font-weight: 700;
+    src: url('../fonts/CircularStd-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Circular';
+    font-weight: 800;
+    src: url('../fonts/CircularStd-Book.otf');
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+*{
+padding: 0; margin: 0;
+font-family: 'Raleway';
+}
+.header{
+    width: 100%;
+    background: linear-gradient(to bottom, #e0eafc, white);
+    margin-bottom: 30px;
+    min-height: 300px;
+}
+.numberSubmitted{
+    border: 1px solid black;
+    width: 90px;
+    height: 90px;
+    margin-left: calc(50% - 125px);
+    margin-top: 20px;
+    float: left;
+}
+.numberSubmitted h2{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 30px;
+}
+.numberSubmitted h6{
+    font-size: 8px;
+    text-align: center;
+}
+.timeLeft{
+    border: 1px solid black;
+    width: 150px;
+    height: 90px;
+    margin-right: calc(50% - 125px);
+    margin-top: 20px;
+    float: right;
+}
+.timeLeft h2{
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 100;
+    font-size: 24px;
+}
+.timeLeft h6{
+    font-size: 8px;
+    text-align: center;
+}
+.header h1{
+    text-align: center;
+    padding-top: 50px;
+}
+ul{
+    list-style-type: none;
+    list-style-position: inside;
+    margin-left: calc(50% - 210px);
+    margin-top: 150px; 
+}
+li{
+    float: left;
+    margin-left: 0px;
+    width: 100px;
+    font-size: 10px;
+    text-align: center;
+    border-left: 1px solid black;
+}
+#noborder{
+    border-left: none;
+}
+.bracket{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 50px;
+    background-color: white;
+    overflow: auto;
+}
+.side{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+.quarter{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+.quarter2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.col1{
+    display: flex;
+    flex-direction: column;
+}
+.col2{
+    display: flex;
+    flex-direction: column;
+    
+}
+.col2container{
+    margin-top: 37.5px;
+}
+.col3container{
+        margin-top: 112.5px;
+}
+.col4container{
+        margin-top: 262.5px;
+}
+.col3{
+    display: flex;
+    flex-direction: column;
+
+}
+.col4{
+    display: flex;
+    flex-direction: column;
+
+}
+.game{
+    width: 170px;
+    height: 60px;
+    border-radius: 3px;
+}
+.col1 .game{
+    background: #f3f3f3;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0;
+    margin-bottom: 15px;
+}
+.col2 .game{
+    background: #eee;
+    margin: 0px;
+    padding: 0;
+    margin-bottom: 90px;
+}
+.col3 .game{
+    background: #f3f3f3;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0;
+    margin-bottom: 235px;
+}
+.col4 .game{
+    background: #eee;
+    margin: 0px;
+    padding: 0;
+    margin-bottom: 0px;
+}
+.team{
+    border-bottom: 1px solid;
+    padding: 0;
+    margin: 0;
+    height: 50%;
+        transition: .5s all;
+}
+.team:hover{
+    cursor: pointer;
+    background-color: #fff;
+
+}
+.seed1{
+    height: 100%;
+    background: #11b571;
+    text-align: center;
+    width: 15%;
+    line-height: 30px;
+    color: white;
+    font-size: 12px;
+    float: left;
+    border-top-left-radius: 3px;
+    
+}
+.seed2{
+    height: 100%;
+    background: #141d36;
+    text-align: center;
+    width: 15%;
+    line-height: 30px;
+    color: white;
+font-size: 12px;
+    float: left;
+    border-bottom-left-radius: 3px;
+    
+}
+.teamname{
+    line-height: 35px;
+    padding-left: calc(15% + 10px);
+    text-transform: ;
+    font-size: 12px;
+    letter-spacing: 1px;
+    
+}
+.bottomq{
+    margin-top: -70px;
+}
+.finalfour{
+    width: 400px;
+    height: 500px;
+    position: relative;
+    left: 50%;
+    margin-left: -200px;
+    top: 350px;
+    border-radius: 3px;
+}
+.finalfour input[type="submit"]{
+    width: 100%;
+    position: absolute;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    background: #11b571;
+    border: 0;
+    color: white;
+    font-size: 16px;
+}
+.finalfour input[type="number"]{
+    width: 100%;
+    position: absolute;
+    height: 50px;
+    bottom: 60px;
+    text-align: center;
+    left: 0;
+    border: 0;
+    color: #333;
+    font-size: 20px;
+}
+.finalfour input[type="submit"]:hover{
+    cursor: pointer;
+}
+.leftcont{
+    width: 50%;
+    float: left;
+}
+.rightcont{
+    width: 50%;
+    float: right;
+}
+.ffteams{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 50px;
+}
+.finalgame{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 180px;
+}
+.finalfour h2{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0px;
+    text-align: center;
+    font-size: 22px;
+}
+.finalfour h4{
+    position: absolute;
+    height: 00px;
+    width: 100%;
+    top: 310px;
+    text-align: center;
+    font-size: 22px;
+}
+.fteam{
+    height: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid;
+    background: #eee;
+}
+.fteam h3{
+    width: 20%;
+    line-height: 50px;
+}
+.fteam p{
+    margin-left: 10px;
+    line-height: 50px;
+}
+.team3{
+    width: 90%;
+    background: #eee;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid;
+}
+.team3 h3{
+    width: 10%;
+    line-height: 50px;
+}
+.team3 p{
+    margin-left: 10px;
+    line-height: 50px;
+    font-size: 18px;
+}
+.team4{
+    position: absolute;
+    width: 100%;
+    top: 350px;
+    height: 50px;
+}
+.team4 h3{
+    width: 10%;
+    line-height: 50px;
+    font-size: 18px;
+}
+.team4 p{
+    line-height: 50px;
+    font-size: 22px;
+    
+}
+#name{
+    width: 400px;
+    height: 50px;
+    padding-left: 40px;
+    position: absolute;
+    left: 50%;
+    margin-left: -220px;
+    top: 120px;
+}
+#fname{
+    width: 9%;
+    height: 50px;
+    padding-left: 1%;
+    position: absolute;
+    left: 30%;
+    top: 10px;
+}
+#lname{
+    width: 9%;
+    height: 50px;
+    padding-left: 1%;
+    position: absolute;
+    left: calc(40%);
+    top: 10px;
+}
+#email{
+    width: 19%;
+    height: 50px;
+    padding-left: 1%;
+    position: absolute;
+    left: calc(50%);
+    top: 10px;
+}
+.information h4{
+    text-align: center;
+    font-size: 32px;
+}
+.information h5{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.footer{
+    height: 150px;
+    background: linear-gradient(to top, #e0eafc, #e0eafc, white);
+    width: 100%;
+}
+.footer p{
+    color: black;
+    text-align: center;
+    line-height: 150px;
+}
+ #points{
+    position: absolute;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    top: 400px;
+}
+#bracketName{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 100;
+}
+#select{
+    width: 90%;
+    max-width: 500px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+option{
+    height: 40px;
+}
+.ranking{
+    border: 1px solid black;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 150px;
+    left: calc(50% - 150px);
+}
+.ranking h2{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 30px;
+}
+.ranking h6{
+    font-size: 8px;
+    text-align: center;
+}
+.totalPoints{
+    border: 1px solid black;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 150px;
+    left: calc(50% - 50px);
+}
+.totalPoints h2{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 30px;
+}
+.totalPoints h6{
+    font-size: 8px;
+    text-align: center;
+}
+.accuracy{
+    border: 1px solid black;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 150px;
+    left: calc(50% + 50px);
+}
+.accuracy h2{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 30px;
+}
+.accuracy h6{
+    font-size: 8px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1250px) {
+    .ffourtd p{
+        display: none;
+    }
+    #fname{
+    width: 86%;
+    height: 50px;
+    padding-left: 4%;
+    position: inherit;
+    margin-left: 5%;
+        margin-bottom: 5px;
+
+}
+#lname{
+    width: 86%;
+    height: 50px;
+    padding-left: 4%;
+    position: inherit;
+    margin-left: 5%;
+    margin-bottom: 5px;
+}
+#email{
+    width: 86%;
+    height: 50px;
+    padding-left: 4%;
+    position: inherit;
+    margin-left: 5%;
+        margin-bottom: 5px;
+}
+    #name{
+      width: 86%;
+    height: 50px;
+    padding-left: 4%;
+    position: inherit;
+    margin-left: 5%;
+        margin-bottom: 50px;
+    }
+    .bracket{
+        width: 100%;
+        padding: 0;
+        min-height: 3700px;
+    }
+    .side{
+        width: 100%;
+    }
+    .quarter2{
+    display: flex;
+    flex-direction: row;
+}
+    .finalfour{
+        top: 2800px;
+        margin-bottom: 100px;
+    }
+    .footer{
+        font-size: 10px;
+    }
+    .ranking{
+    border: 1px solid black;
+    width: 90px;
+    height: 90px;
+    position: inherit;
+    top: 0px;
+    left: 0px;
+        margin-bottom: 20px;
+        float: left;
+        margin-left: calc(50% - 150px);
+        margin-top: 20px;
+}
+    .totalPoints{
+    border: 1px solid black;
+    width: 90px;
+    height: 90px;
+    position: inherit;
+    top: 0px;
+    left: 0px;
+        margin-bottom: 20px;
+        float: left;
+        margin-left: 5px;
+        margin-top: 20px;
+}
+    .accuracy{
+    border: 1px solid black;
+    width: 90px;
+    height: 90px;
+    position: inherit;
+    top: 0px;
+    left: 0px;
+        margin-bottom: 20px;
+        float: left;
+        margin-left: 5px;
+        margin-top: 20px;
+}
+}
+table{
+    width: 95%;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+tr{
+    height: 50px;
+    border-bottom: 1px solid #aaa;
+}
+tr:nth-child(2) {
+  background: #f2f2f2;
+}
+th{
+    text-align: left;
+}
+.tname{
+    width: 10%;
+}
+.ffourtd{
+    width: 10%;
+}
+.ffourtd h3{
+    background: #666;
+    float: left;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    border-radius: 3px;
+    
+}
+.ffourtd p{
+    line-height: 30px;
+    margin-left: 35px;
+    font-size: 15px;
+}
+.rank {
+    text-align: center;
+    width: 5%;
+}
+table button{
+    background: #11b571;
+    border: 0;
+    margin-right: 10px;
+    width: 90%;
+    display: block;
+    height: 40px;
+    max-width: 100px;
+}
+button:hover {
+    cursor: pointer;
+}
+button a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+.totalscore {
+    text-align: center;
+    font-weight: bolder;
+    width: 4%;
+}
+.open{
+    width: 70px;
+}
+.rscore{
+    width: 4%;
+    text-align: center;
+}
+th{
+    font-size: 12px;
+}
+.score{
+    text-align: center;
+}
+.ffour{
+    text-align: center;
+}
+#allbrackets{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
